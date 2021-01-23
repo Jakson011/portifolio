@@ -904,6 +904,11 @@ footer {
         bottom: 5rem;
     }
 
+    .banner {
+        align-items: left;
+        justify-content: left;
+    }
+
     .banner h1 {
         color: #ffffff;
         font-size: 3rem;
@@ -913,6 +918,7 @@ footer {
         margin-bottom: 1.5rem;
         opacity: 0;
         animation: moveBanner 1s 0.5s forwards;
+        margin-left: -2rem;
     }
     
     .banner p {
@@ -923,6 +929,7 @@ footer {
         margin-bottom: 1.5rem;
         opacity: 0;
         animation: moveBanner 1s 0.7s forwards;
+        margin-left: -2rem;
     }
     
     .banner button{
@@ -939,6 +946,7 @@ footer {
         opacity: 0;
         animation: moveBanner 1s 0.9s forwards;
         cursor: pointer;
+        margin-left: -2rem;
     }
     
 
@@ -1257,7 +1265,7 @@ footer {
         padding: 0 1rem 1rem;
         color: #fff;
         font-family: var(--font-primary);
-        font-size: 2rem;
+        font-size: 1.7rem;
         font-weight: lighter;
         box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
         border-radius: 10px;
