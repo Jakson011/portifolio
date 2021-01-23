@@ -156,7 +156,7 @@ header {
     animation: moveBanner 1s 0.7s forwards;
 }
 
-.banner button {
+.banner button{
     font-family: var(--font-action);
     color: #fff;
     font-size: 1rem;
@@ -169,13 +169,13 @@ header {
     border-radius: 10px;
     opacity: 0;
     animation: moveBanner 1s 0.9s forwards;
+    cursor: pointer;
 }
 
 .banner button:hover {
     color: #000;
     opacity:0.8 ;
  }
-
 
  @keyframes moveBanner {
     0%{
@@ -652,7 +652,7 @@ footer {
 .social-list a {
     margin: 0 1rem;
     color: #8442ff;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .social-list ul {
@@ -661,10 +661,10 @@ footer {
 
 #link-topo {
     position: fixed;
-    right: 1.5rem;
-    bottom: 3rem;
-    width: 3rem;
-    height: 3rem;
+    right: 2rem;
+    bottom: 4rem;
+    width: 5rem;
+    height: 5rem;
     background: #6a3093;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -672,7 +672,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: #fff;
-    border-radius: 0.5rem;
+    border-radius: 40%;
     box-shadow: 0 0.1rem 0.6rem #00000009;
     z-index: 149;
 }
@@ -903,6 +903,44 @@ footer {
     .social-media {
         bottom: 5rem;
     }
+
+    .banner h1 {
+        color: #ffffff;
+        font-size: 3rem;
+        font-family: var(--font-primary);
+        text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .4);
+        line-height: 3.5rem;
+        margin-bottom: 1.5rem;
+        opacity: 0;
+        animation: moveBanner 1s 0.5s forwards;
+    }
+    
+    .banner p {
+        font-family: var(--font-secundary);
+        color: #fff;
+        font-size: 2rem;
+        text-shadow: .2rem .2rem rgba(0, 0, 0, .4);
+        margin-bottom: 1.5rem;
+        opacity: 0;
+        animation: moveBanner 1s 0.7s forwards;
+    }
+    
+    .banner button{
+        font-family: var(--font-action);
+        color: #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        background: #6a3093;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 1rem 3rem;
+        border-radius: 10px;
+        opacity: 0;
+        animation: moveBanner 1s 0.9s forwards;
+        cursor: pointer;
+    }
+    
 
     .header {
         width: 100%;
@@ -1175,7 +1213,7 @@ footer {
     #link-topo {
         position: fixed;
         right: 1.5rem;
-        bottom: 3rem;
+        bottom: 5rem;
         width: 3rem;
         height: 3rem;
         background: #6a3093;  /* fallback for old browsers */
