@@ -683,6 +683,10 @@ footer {
 
 
 @media screen and (max-width: 768px) {
+        html, body{
+        overflow-x: hidden;        
+     }
+
     .hamburg {
         
         width: 2rem;
@@ -761,14 +765,14 @@ footer {
     }
 
     .sessao-projetos {
-        margin-top: 2rem;
+        margin-top: 1rem;
         width: 100%;
         height: 40rem;
     }
 
     .card {
-        width: 15rem;
-        height: 23rem;
+        width: 12rem;
+        height: 22rem;
         position: relative;
     }
     
@@ -829,20 +833,18 @@ footer {
         height: 45rem;
     }
     .contato-wrapper {
-        width: 80%;
+        width: 90%;
         height: 30rem;
       
     }
 
     .field-label {
-        font-size: 1rem;
+        font-size: .7rem;
         
     }
     .field {
         font-size: 1.2rem;
     }
-
-
 
     .sessao-orcamento {
         width: 100%;
@@ -850,20 +852,329 @@ footer {
     }
 
     .orcamento-wrapper {
-        width: 85%;
+        width: 70%;
         height: 35rem;
         background-color:#ffffff99;
-        border-radius: 10px;
-        box-shadow:  0 0.1rem .0.3rem rgba(0, 0, 0, 0.5 );
+        border-radius: 20px;
+        box-shadow:  0 0.1rem .0.3rem rgba(193, 13, 248, 0.5);
         position: relative;
+        margin-left: -.3rem;
+    }
+
+    .sessao-orcamento h1 {
+        position: absolute;
+        top: -2.5rem;
+        left: 0rem;
+        background: #6a3093;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 0 2rem;
+        color: #fff;
+        font-family: var(--font-primary);
+        font-size: 2.2rem;
+        font-weight: lighter;
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+    
+    .sessao-orcamento form {
+        margin: 3rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;    
+    }
+    
+    .sessao-orcamento label {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .sessao-orcamento input[type="number"] {
+        width: 5rem;
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    
+    .sessao-orcamento input[type="checkbox"] {
+        margin-right: 10rem;
+    }
+    
+    .btn-orcamento {
+        text-transform: uppercase;
+        padding: 1rem;
+        cursor: pointer;
+        grid-column: 2;
+        margin-right: 1rem;
     }
 
 }
 
+
+@media screen and (max-width: 600px) {
+    .sessao-conhecimentos {
+        width: 100%;
+        height: 50rem;
+    }
+    
+    .conhecimentos-img-wrapper img {
+    visibility: hidden;
+    }
+    
+    .conhecimento-header {
+        align-items: left;
+        justify-content: center;
+        margin-left: 5rem;
+        width:65%;
+        height:70px;
+        border:solid 5px;
+        border-radius:15px;
+        border-color: #ff4081;
+        margin-bottom: 0rem;
+        background-color: #8442ff;
+        text-align: center;
+    }
+    
+    .projetos {
+        display: block;
+        margin-left: 7rem;
+    }
+ 
+    .sessao-projetos {
+        margin-top: 2rem;
+        width: 100%;
+        height: 90rem;
+    }
+    
+    
+    .card {
+        width: 20rem;
+        height: 24rem;
+        position: relative;
+        margin-bottom: .5rem;
+    }
+        
+    .card-img-wrapper {
+        width: 100%;
+        height: 100%;
+        background-color: #262626;
+        border-radius: 1rem;         
+    }
+        
+    .card-img-wrapper img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        opacity: .8;
+        transition: opacity .3s;
+    }
+        
+    
+        
+    .card-info {
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        bottom: 0;
+        padding: 3rem;
+        text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6);  
+        }
+        
+    .card-info h2 {
+        text-align: center;
+        }
+       
+    .sessao-contato {
+        width: 100%;
+        height: 40rem;
+        }
+
+    .contato-wrapper {
+        width: 95%;
+        height: 35rem;
+    }
+    
+    .field-label {
+        font-size: 1rem;
+        width: 100%;
+    }
+ 
+    .field {    
+        font-size: 1.5rem;
+    }
+     
+    .contato-left {
+        width: 10%;
+    }
+        
+    .contato-right {
+        width: 60%;
+        background-color: #eee;
+        padding: 1rem 5rem 3rem 2rem;
+    }
+        
+    .sessao-contato h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 3.5rem;
+        font-family: var(--font-primary);
+        color: #272727;
+        font-weight: lighter; 
+    }
+        
+    .sessao-contato form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .input-group {
+        position: relative;
+        margin-left: 20px;
+        }
+        
+    .field {
+        width: 17rem;
+        font-size: 1.5rem;
+        font-family: var(--font-secundary);
+        border-bottom: 2px dashed #636363;
+        height: 2.5rem;
+        outline: none;
+        margin: 1rem 0;
+    }
+                
+    .btn-submit  {
+        font-size: 1.3rem;
+        width: 70%;
+        height: 3rem;
+        margin-top: 2.5rem;
+        margin-left: 1rem;
+    }
+        
+    .field {
+    font-size: 1.1rem;
+    }
+    
+    .sessao-orcamento {
+        width: 100%;
+        height: 50rem;
+            
+    }
+    
+    .orcamento-wrapper {
+        width: 89%;
+        height: 35rem;
+        background-color:#ffffff99;
+        border-radius: 20px;
+        box-shadow:  0 0.1rem .0.3rem rgba(193, 13, 248, 0.5);
+        position: relative;
+        margin-left: -.3rem;
+    }
+    
+    .sessao-orcamento h1 {
+        position: absolute;
+        top: -2.5rem;
+        left: 0rem;
+        background: #6a3093;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 0 2rem;
+        color: #fff;
+        font-family: var(--font-primary);
+        font-size: 2.2rem;
+        font-weight: lighter;
+        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+        
+    .sessao-orcamento form {
+        margin: 3rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;          
+    }
+        
+    .sessao-orcamento label {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+       
+    .sessao-orcamento input[type="number"] {
+        width: 5rem;
+        font-size: 2rem;
+        padding: 0.3rem;
+    }
+        
+    .sessao-orcamento input[type="checkbox"] {
+        margin-right: 10rem;
+    }
+        
+        .btn-orcamento {
+        text-transform: uppercase;
+        padding: 1rem;
+        cursor: pointer;
+        grid-column: 2;
+        margin-right: 1rem;
+    }
+    
+    footer {
+        width: 100%;
+        height: 10rem;
+        background-color: #17181b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    .footer-content {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;    
+    }
+        
+    .footer-content p {
+        font-family: var(--font-secundary);
+        color: #a7a7a7;
+        font-size: 1rem;
+    }
+        
+        .social-list a {
+            margin: 0 .5rem;
+            color: #8442ff;
+            font-size: 1.5rem;
+    }
+        
+    .social-list ul {
+        display: inline;
+    }
+        
+    #link-topo {
+        position: fixed;
+        right: 1.5rem;
+        bottom: 5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        background: #6a3093;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: 50%;
+        box-shadow: 0 0.1rem 0.6rem #00000009;
+        z-index: 149;
+    }
+    
+}
+
 @media screen and (max-width: 414px) {
     html, body{
-        overflow-x: hidden;        
-     }
+        overflow-x: hidden;
+    }
 
     .hamburg {
         width: 2rem;
@@ -998,13 +1309,13 @@ footer {
     .sessao-projetos {
         margin-top: 2rem;
         width: 100%;
-        height: 80rem;
+        height: 85rem;
     }
 
 
     .card {
         width: 20rem;
-        height: 22rem;
+        height: 24rem;
         position: relative;
     }
     
@@ -1013,7 +1324,7 @@ footer {
         height: 100%;
         background-color: #262626;
         border-radius: 1rem;
-        margin : .5rem;
+        margin : 0.8rem;
         
     }
     
@@ -1039,18 +1350,16 @@ footer {
     
     .card-info h2 {
         margin-left: 5rem;
-
     }
-   
    
     .sessao-contato {
         width: 100%;
         height: 40rem;
     }
+   
     .contato-wrapper {
         width: 95%;
         height: 35rem;
-      
     }
 
     .field-label {
@@ -1060,9 +1369,6 @@ footer {
     .field {    
         font-size: 1.5rem;
     }
-
-
-
 
     .contato-left {
         width: 3%;
@@ -1124,7 +1430,7 @@ footer {
     .sessao-orcamento {
         width: 100%;
         height: 50rem;
-        margin-left: -.5rem;
+        
     }
 
     .orcamento-wrapper {
@@ -1134,23 +1440,23 @@ footer {
         border-radius: 20px;
         box-shadow:  0 0.1rem .0.3rem rgba(193, 13, 248, 0.5);
         position: relative;
+        margin-left: -.3rem;
     }
 
     .sessao-orcamento h1 {
         position: absolute;
-        top: -2.5rem;
+        top: -3rem;
         left: 0rem;
         background: #6a3093;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        padding: 0 2rem;
+        padding: 0 1rem 1rem;
         color: #fff;
         font-family: var(--font-primary);
-        font-size: 2.2rem;
-        font-weight: lighter;
-        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
+        font-size: 1.7rem;
+
     }
+
     
     .sessao-orcamento form {
         margin: 3rem;
@@ -1158,6 +1464,7 @@ footer {
         grid-template-columns: auto 1fr;
         column-gap: 2rem;
         row-gap: 2rem;
+        
 
     
     }
@@ -1223,8 +1530,8 @@ footer {
         position: fixed;
         right: 1.5rem;
         bottom: 5rem;
-        width: 3rem;
-        height: 3rem;
+        width: 3.5rem;
+        height: 3.5rem;
         background: #6a3093;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -1232,30 +1539,141 @@ footer {
         justify-content: center;
         align-items: center;
         color: #fff;
-        border-radius: 0.5rem;
+        border-radius: 50%;
         box-shadow: 0 0.1rem 0.6rem #00000009;
         z-index: 149;
     }
 
-
 }
 
 
-@media screen and (max-width: 375px) {
 
-    .conhecimento-header {
-        margin-left: 3rem;
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+   
+
+    .banner h1 {
+        color: #ffffff;
+        font-size: 2.7rem;
+        font-family: var(--font-primary);
+        text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .4);
+        line-height: 3.5rem;
+        margin-bottom: 1.5rem;
+        opacity: 0;
+        animation: moveBanner 1s 0.5s forwards;
+        margin-left: -2rem;
+    }
+    
+    .banner p {
+        font-family: var(--font-secundary);
+        color: #fff;
+        font-size: 2rem;
+        text-shadow: .2rem .2rem rgba(0, 0, 0, .4);
+        margin-bottom: 1.5rem;
+        opacity: 0;
+        animation: moveBanner 1s 0.7s forwards;
+        margin-left: -2rem;
+    }
+    
+    .banner button{
+        font-family: var(--font-action);
+        color: #fff;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        background: #6a3093;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        opacity: 0;
+        animation: moveBanner 1s 0.9s forwards;
+        cursor: pointer;
+        margin-left: -2rem;
+    }
+
+
+    .sessao-header h1 {
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    .sessao-conhecimentos {
+        width: 100%;
+        height: 45rem;
     }
 
     .projetos {
-        margin-left: 1.5rem;
+        display: block;
+        margin-left: 2rem;
+    }
+    .sessao-projetos {
+        margin-top: 2rem;
+        width: 100%;
+        height: 80rem;
     }
 
+
     .card {
-        width: 18rem;
+        width: 16rem;
         height: 22rem;
+        position: relative;
+        text-align: center;
     }
     
+
+    
+    .card-info h2 {
+        margin-left: 1rem;
+    }
+   
+    .sessao-contato {
+        width: 100%;
+        height: 40rem;
+    }
+   
+    .contato-wrapper {
+        width: 95%;
+        height: 35rem;
+    }
+
+    .field-label {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .field {    
+        font-size: 1.4rem;
+    }
+    
+    .contato-right {
+        width: 62%;
+    }
+    
+  
+
+
+
+    .sessao-orcamento {
+        width: 100%;
+        height: 50rem;
+        
+    }
+
+    .orcamento-wrapper {
+        width: 90%;
+        height: 35rem;
+        background-color:#ffffff99;
+        border-radius: 20px;
+        box-shadow:  0 0.1rem .0.3rem rgba(193, 13, 248, 0.5);
+        position: relative;
+        margin-left: -.3rem;
+    }
+
     .sessao-orcamento h1 {
         position: absolute;
         top: -3rem;
@@ -1267,10 +1685,342 @@ footer {
         color: #fff;
         font-family: var(--font-primary);
         font-size: 1.7rem;
-        font-weight: lighter;
-        box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
+
     }
+
+    
+    .sessao-orcamento form {
+        padding-top: 4rem;
+        margin: .2rem;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 2rem;
+        row-gap: 2rem;
+        
+
+    
+    }
+    
+    .sessao-orcamento label {
+        font-size: .95rem;
+    }
+
+
+
+
+@media screen and (max-width: 300px) {
+    .hamburg {
+        width: 2rem;
+        height: 2rem;
+        top: 2rem;          
+        }
+        
+        .show-menu .hamburg {
+            right: 10rem;
+         
+        } 
+    
+        .sidebar {
+            width: 13rem;
+            height: 30rem;
+            
+        }
+    
+        .menu {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .menu-item {
+            text-align: center;
+            margin-bottom: 2rem;  
+        }
+        
+        .menu-link {
+            font-size: 1.5rem;
+        }
+    
+        .social-media {
+            bottom: 1rem;
+        }
+    
+        .banner {
+            align-items: left;
+            justify-content: left;
+        }
+    
+        .banner h1 {
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-family: var(--font-primary);
+            text-shadow: .3rem .4rem 2px rgba(0, 0, 0, .4);
+            line-height: 3.5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: moveBanner 1s 0.5s forwards;
+            margin-left: -2rem;
+        }
+        
+        .banner p {
+            font-family: var(--font-secundary);
+            color: #fff;
+            font-size: 2rem;
+            text-shadow: .2rem .2rem rgba(0, 0, 0, .4);
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: moveBanner 1s 0.7s forwards;
+            margin-left: -2rem;
+        }
+        
+        .banner button{
+            font-family: var(--font-action);
+            color: #fff;
+            font-size: .8rem;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            background: #6a3093;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            padding: 1rem 1rem;
+            border-radius: 10px;
+            opacity: 0;
+            animation: moveBanner 1s 0.9s forwards;
+            cursor: pointer;
+            margin-left: -2rem;
+        }
+        
+    
+        .header {
+            width: 100%;
+            height: 50rem;
+        }
+    
+    
+    
+        .sessao-header h1 {
+            font-size: 2rem;
+            margin-left: 2rem;
+        }
+    
+        .sessao-conhecimentos {
+            width: 100%;
+            height: 40rem;
+        }
+    
+        .conhecimentos {
+            display:flex;
+            flex-direction: column; 
+        }
+    
+        .conhecimento-header {
+            align-items: center;
+            justify-content: center;
+            margin-left: 1.5rem;
+            width:80%;
+            height:70px;
+            border:solid 3px;
+            border-radius:15px;
+            border-color: #ff4081;
+            margin-bottom: 0rem;
+            background-color: #8442ff;
+            
+        }
+    
+        .projetos {
+            display: block;
+            margin-left: 2rem;
+        }
+        .sessao-projetos {
+            margin-top: 2rem;
+            width: 100%;
+            height: 75rem;
+        }
+    
+    
+        .card {
+            width: 13rem;
+            height: 20rem;
+            position: relative;
+            text-align: center;
+        }
+        
+        .card-img-wrapper {
+            width: 100%;
+            height: 100%;
+            background-color: #262626;
+            border-radius: 1rem;
+            margin : 0.8rem;
+            
+        }
+        
+        .card-img-wrapper img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+            opacity: .8;
+            transition: opacity .3s;
+        }
+       
+        .card-info {
+        opacity: 1;
+        visibility: visible;
+        position: absolute;
+        bottom: 0;
+        padding: .2rem;
+        text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, .6);  
+        }
+        
+        .card-info h2 {
+            margin-left: 2rem;
+        }
+       
+        .sessao-contato {
+            width: 100%;
+            height: 40rem;
+        }
+       
+        .contato-wrapper {
+            width: 95%;
+            height: 35rem;
+        }
+    
+        .field-label {
+            font-size: 1rem;
+            width: 100%;
+        }
+        .field {    
+            font-size: 1rem;
+        }
+        
+        .contato-right {
+            width: 75%;
+            background-color: #eee;
+            padding: 1rem 5rem 3rem 2rem;
+        }
+        
+         
+    
+    
+        .sessao-orcamento {
+            width: 100%;
+            height: 40rem;
+            
+        }
+    
+        .orcamento-wrapper {
+            width: 89%;
+            height: 30rem;
+            background-color:#ffffff99;
+            border-radius: 20px;
+            box-shadow:  0 0.1rem .0.3rem rgba(193, 13, 248, 0.5);
+            position: relative;
+            margin-left: -.3rem;
+        }
+    
+        .sessao-orcamento h1 {
+            position: absolute;
+            top: -3rem;
+            left: 0rem;
+            background: #6a3093;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            padding: 0 1rem 1rem;
+            color: #fff;
+            font-family: var(--font-primary);
+            font-size: 1.5rem;
+    
+        }
+    
+        
+        .sessao-orcamento form {
+            padding-top: 3rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            column-gap: 2rem;
+            row-gap: 2rem;
+            
+    
+        
+        }
+        
+        .sessao-orcamento label {
+            font-size: .7rem;
+            font-weight: bold;
+            
+            
+        }
+        
+        .sessao-orcamento input[type="number"] {
+            width: 5rem;
+            font-size: 2rem;
+            padding: 0.1rem;
+        }
+        
+        .sessao-orcamento input[type="checkbox"] {
+            margin-right: 5rem;
+        }
+        
+        .btn-orcamento {
+            text-transform: uppercase;
+            padding: 1rem;
+            cursor: pointer;
+            grid-column: 2;
+            margin-right: 1rem;
+        }
+    
+        footer {
+            width: 100%;
+            height: 10rem;
+            background-color: #17181b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .footer-content {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        
+        }
+        
+        .footer-content p {
+            font-family: var(--font-secundary);
+            color: #a7a7a7;
+            font-size: 1rem;
+        }
+        
+        .social-list a {
+            margin: 0 .5rem;
+            color: #8442ff;
+            font-size: 1.5rem;
+        }
+        
+        .social-list ul {
+            display: inline;
+        }
+        
+        #link-topo {
+            position: fixed;
+            right: 1.5rem;
+            bottom: 5rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            background: #6a3093;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0.1rem 0.6rem #00000009;
+            z-index: 149;
+        }
+    
 }
 
 
