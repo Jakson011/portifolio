@@ -5,6 +5,9 @@ Portifólio do desenvolvedor
 
 O controle das tarefas desse projeto será realizado no GitHub
 
+#Lançamento (clik no link abaixo para visualizar)
+https://mj-fullstackdeveloper.netlify.app/
+
 ## Icones
 
 - :package: nova funcionalidade
